@@ -31,3 +31,14 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+task gretting {
+    description = 'print greeting'
+    println("hi")
+}
+
+tasks.register('greeting2') {
+    description = 'print greeting2'
+    print("hihi")
+}
+
